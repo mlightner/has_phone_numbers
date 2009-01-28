@@ -1,3 +1,9 @@
+== mlightner
+
+== 0.2 / 2009-01-26
+
+* Added a lot of functionality to the PhoneNumber model.  Can now parse from raw strings.
+
 == master
 
 == 0.1.0 / 2008-12-14
