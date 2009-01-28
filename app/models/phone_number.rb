@@ -144,7 +144,7 @@ class PhoneNumber < ActiveRecord::Base
     (include_extension && extension) ? "+#{country_code}#{number}x#{extension}" : "+#{country_code}#{number}"
   end
 
-  def valid?
+  def has_country_code?
     (country_code) ? true : false
   end
 

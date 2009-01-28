@@ -1,5 +1,9 @@
-require 'config/boot'
-require "#{File.dirname(__FILE__)}/../../../../plugins_plus/boot"
+begin
+  require 'config/boot'
+  require "#{File.dirname(__FILE__)}/../../../../plugins_plus/boot"
+rescue Exception => e
+  raise "The plugins_plus plugin must be installed in your app to run tests."
+end
 
 Rails::Initializer.run do |config|
   config.plugin_paths << '..'
